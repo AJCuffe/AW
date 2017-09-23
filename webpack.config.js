@@ -4,9 +4,9 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
-  entry: './src/main.ts',
+  entry: './client/main.ts',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, './client/dist'),
     filename: 'app.bundle.js'
   },
   module: {
@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: [
     new htmlWebpackPlugin({
-      template: './src/index.html'
+      template: './client/index.html'
     })
   ]
 
